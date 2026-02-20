@@ -2,6 +2,7 @@
 
 - A terminal-based UI tool that allows for quick navigation into specific project directories
 - Solves the friction of manually typing long cd (change directory) paths when switching between multiple projects
+- Doesnt support windows for now i think
 
 # shortcut
 - to open using terminal:
@@ -13,7 +14,18 @@
 
 - then you can type SHORTCUT_NAME in terminal to open the program
 
-# setup
+# xcode
+- sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+- verify: xcode-select -p (it should print a directory to Developer folder)
+
+- commands:
+- open -a Xcode . (open current directory using xcode)
+- open -a Xcode (open xcode with no directory)
+- xed . (open xcode with current directory but shorter)
+- after cd ke prokject you can just type xed . to open xcode on that directory
+- or you can add alias ex: ("alias oxc='open -a Xcode' to open xcode with no directory selected")
+
+# flow
 - create a .env and fill out your directory:
 - PROJECT_DIR = "file/file/file/parent_folder"
 
